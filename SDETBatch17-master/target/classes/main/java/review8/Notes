@@ -1,0 +1,103 @@
+Types of Variables:
+    With respect to scope there are three types of variables. Local, instance and static.
+Local Variables:
+    Variables which are declared inside a block of code are called local variables
+    For example all the variables that we declare inside if-else statements, loops, switch case,
+    methods and constructors.
+        Upside:
+            1.  They occupy memory for the shortest period of time as soon as the block of code is done executing
+                they are removed from the memory.
+            2.  Help naming conflicts
+        Downside:
+            1.  They have limited access
+    When should we use local Variables:
+        Always go for local if possible
+
+Instance Variables:
+    Variables that are declared in the class but outside any block of code
+        Upside:
+            Can be accessed inside any instance method or constructor.
+        Downside:
+            Occupy the memory for longer than local
+            can't be accessed inside static methods because static methods are not tied to any specific instance;
+            they belong to the class and have class-level scope and lifetime. When you call a static method,
+            there may not even be an instance of the class in existence.
+            Therefore, static methods have no direct access to instance-specific data.
+    When should we go with instance variables/field/properties/attributes
+        1.  When we want to share something across all instance methods
+        2.  When we are planning to create multiple pbjects using a class and every object might have a
+            different value for a variable
+
+Static Variables:
+    Instance variables with a static keyword are called static variables
+        Upside:
+            They have the widest scope. Can be accessed anywhere if combines with proper access modifier.
+            They can be accessed anywhere in a project
+    When to use:
+        Whenever we want to share something across all methods and other classes we should go with static variables.
+        90% of the time they are final and public as well so that everyone can use them but no one can modify them.
+
+    Static methods:
+        Methods which are declared with static keyword are called static methods
+            Upside:
+                They can be used by just writing the name of the class. Can be accessed anywhere if combined with
+                proper access modifier.
+
+            Downside:
+                We can't override them. Which means we will not be able to write dynamic code or will
+                not be able to use polymorphism.
+        When to use:
+            When I want to access method from anywhere but not be changed
+===============================================================================================================================
+Constructors:
+    Constructors are a special type of method which are used to give initial values to
+    fields/instance/properties/attributes. They also help us build an object more easily from a class.
+Rules:
+    1.  Constructors don't have any return type not even void.
+    2.  They must have the same name as the class name
+    3.  Static is not allowed with constructors
+
+Interview Questions:
+    Can we use private constructors?
+    Yes
+    Can we use Static with a constructor
+    No
+    Can we use final keyword with constructors
+    No
+    Can I use return keyword in a constructor?
+    Yes
+
+Why should we use Constructors?
+    Cleaner Code
+    Secure code
+"this" keyword
+    1.  we can access the instance variable with this keyword and there is a local variable also in the same scope
+    2.  We can call one constructor inside another one in the same class if we want to have the code from the
+            other class.
+
+Inheritance:
+    One of the main pillars of object oriented programming. Allows us to build a class using another class
+    so we don't repeat code.
+    extends is the keyword we use to inherit the fields and methods from another class
+        Types of inheritance:
+            1. Single
+            2. Heirarchical
+            3. Multi-level
+            4. Multiple (not allowed in java for classes)
+            5. Hybrid
+        Why is multiple inheritence not allowed?
+            Because of the diamond problem. The child won't know where to inherit from
+
+        Why should we use inheritance?
+            1.  fast and less code
+        Rules:
+            1.  private member(fields, methods) can't be used in child/derived/sub class
+            2.  Constructors are not inherited automatically. We need the super keyword to call them
+            3.  Inheritance is parent to child
+        Disadvantage of inheritance:
+            tightly coupling => when one class becomes dependant on another class. If we change anything
+            in the parent class it might introduce errors in all of the child classes.
+
+
+
+

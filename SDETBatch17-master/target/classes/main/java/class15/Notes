@@ -1,0 +1,8 @@
+Constructors:
+    Help us build objects from classes easily.
+    They help us give initial values to the instance fields.
+    The name of the constructor must be the same as the class name.
+    Constructors don't have ay return types.
+    Most of the time constructors are public.
+    Other than initializing the values, we can have whatever type
+    of code inside the constructor. Example: if-else etc.

@@ -1,0 +1,45 @@
+Collections Framework:
+    It's a collection of classes and interfaces which help us build dynamic programs which are
+    capable of handling large amounts of data.
+Why should we learn about Collections Framework?
+    Arrays are not good and we need something that us dynamic and more flexible:
+        1. They ar fixed in size
+        2. No ready made methods, we have to create our own
+        3.
+
+ArrayList:
+    Better version of Arrays. It is also index based. It's dynamic we don't need to provide the size
+    before hand and it contains a lot of methods to manipulate the data inside of it.
+
+    Syntax:
+        For Arrays we used to use:
+            DataType[] nameForArray = new DataType[Size]
+            String[] arr = new String[5];
+
+        For ArrayList:
+            ArrayList<DataType> nameForArrayList =  new ArrayList<>();
+            ArrayList<String> arr = new ArrayList<>();
+
+        Methods From ArrayList:
+            size() => number of elements in arrayList
+            add(element) => adds new element to the arrayList
+            get(index) => Returns the element on specified index
+            remove(index) => removes the element on the specified index
+            remove(element)=>removes the element from the arraylist
+            indexOf(element)=>returns the index of passed element
+            contains(element)=>returns true if element is present otherwise false
+
+Wrapper classes:
+    They are specially designed classes designed for primitive data types. For every primitive datatype we have
+    a class. These classes are called wrapper classes.
+    byte => Byte
+    short => Short
+    int => Integer
+    long => Long
+    float => Float
+    double => Double
+    char => Character
+    boolean => Boolean
+        Why Wrapper Classes?
+            1. Because primitives are not supported by collections framework.
+            2. A class can have methods inside of it which is not possible for a primitive.

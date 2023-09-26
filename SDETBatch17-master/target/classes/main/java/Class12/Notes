@@ -1,0 +1,27 @@
+Methods/Functions/Behaviors/Routines:
+    Methods are blcks of code that contains pre-written code that is executable when we call a method
+
+There are two main types of methods:
+    1. Methods which do not return any data(void type)
+    2. Methods which can return data like int double char etc
+
+Syntax:
+
+========================================
+dataType methodName (dataType nameofPrameter, dataType NameOfOtherParameter)
+return the results if method in not void
+
+int add(int num1, int num2) {
+      int result = num1 + num2;
+
+      return result;
+}
+
+int => return type of method
+add => name of the method
+(int num1, int num2) => parameters
+    { body of the method
+        int result = num1 + num2;
+
+              return result;
+    }

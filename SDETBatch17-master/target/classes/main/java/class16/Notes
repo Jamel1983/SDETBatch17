@@ -1,0 +1,17 @@
+Constructors:
+    Constructors hlp us create the objects from the classes in a more secure and neat way.
+    We can also put any piece of code that we want to execute when the object of a class is created.
+
+Why we should use Constructors?
+    1. They help us write more secure classes
+    2. Cleaner code
+    3. More control over the values we can assign to the instance fields
+
+Syntax:
+    1. No return type not even void
+    2. Same name as class
+    3. Usually public access modifier
+    4. Parameters
+    5. Body of the constructor
+
+Rules:

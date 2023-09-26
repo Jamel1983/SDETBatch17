@@ -1,0 +1,44 @@
+Types of variables:
+    There are three types of variables: local, instance and static
+
+local variable:
+    local variables are the variables which are created/declared inside a block of code
+    like if else conditions, loop, switch statements, methods are blocks of code.
+
+    upside:
+        They occupy the memory for the shortest period of time. As soon as Java is done executing that block of code
+        they are removed from the memory. The code that we type using local variables are very easy to debug
+
+    downside:
+        They can only be accessed within the block of they are created
+
+instance variable:
+    Are created outside of the blocks(If else, switch, loops, methods) of code but inside a class
+
+    upside:
+        They can be accessed anywhere within that class
+
+    downside:
+        They are created when an object of the class is created and they will stay in the memory as long as that object
+        is in the memory, whether you use them or not
+
+Local vs instance:
+    Whenever it is possible go and create local variables. Only go with instance variable when you can't solve a
+    problem with local variables
+
+Static Variables:
+    static variables are created inside a class but outside of a block of code with a static keyword.
+    A local variable can never be a static variable
+
+    upside:
+        They are universal when it comes to scope and accessibilty. We don't even need to create the object of that
+        class in which they are created we can simply write the name of the class and we can access it.
+
+    downside:
+        Static variable occupy the memory for longest of all, not more memory. They are created even though you don't create
+        any object of that class
+
+Uses of types of local variables:
+    Local:
+        Whenever we are solving any problem many times we need local variables to temporarily store data.
+        In all of those cases you should be going with local variables.
